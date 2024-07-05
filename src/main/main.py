@@ -1,2 +1,7 @@
+"""Main Entrypoint module."""
+
+from display.app import App
+
 if __name__ == "__main__":
-    print("Hello ")
+    theApp = App()
+    theApp.on_execute()
