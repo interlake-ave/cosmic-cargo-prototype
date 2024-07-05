@@ -34,4 +34,6 @@ repos:
           - flake8-annotations
           - flake8-docstrings
         exclude: ^.+\/test\/.+
-        args: [--ignore=ANN101]
+        # Ignore imperitive mood D401
+        # Ignore ANN101 missing type annotations for "self"
+        args: ["--ignore=D401,ANN101"]
